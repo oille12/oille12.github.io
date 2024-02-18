@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.component-signup {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    min-width: 400px;
+    margin: auto;
+    border: 2px dashed yellowgreen;
+    padding: 30px;
+}
+
+.component-signup input,
+.component-signup textarea {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px;
+    border: 2px solid cornflowerblue;
+    border-radius: 16px;
+}
+
+.component-signup input[type=submit] {
+    width: 200px !important;
+    background-color: grey;
+    border: 2px solid darkgrey;
+}
+/* 디테일한 속성 [type= ] 을 잡으면 이게 우선순위가 높아짐 */
+/* !important 를 작성하면 무조건 상위순위가 됨 -> 꼭 필요할 때만 사용권장 */
+
+.component-signup input[type=submit]:hover,
+.component-signup input[type=submit]:active {
+    background-color: orange;
+    border: 2px solid darkorange;
+}
+
+.component-signup input[type=checkbox] {
+    width: 20px;
+}
+
+#width-40 {
+    width: 42%;
+    float: left;
+    margin-right: 30px;
+}
+
+.clear-both {
+    clear: both;
+}
