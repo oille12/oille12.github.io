@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 600px; width: 50%; background-color: grey; display: inline-block; font-size: 0;">
+        <!-- inline-block으로 정렬할 때는 상위에서 감싸는 태그에 font-size: 0; 을 적용해줘야 웹상 오류가 없다. (틀어짐 같은) -->
+        <div style="height: 300px; width: 50%; background-color: green; display: inline-block;">
+            <p>단, 그럼 하위 폰트도 0이 되므로, 따로 font-size를 지정해주어야 한다.</p>
+        </div>
+        <div style="height: 300px; width: 50%; background-color: red; display: inline-block;"></div>
+        <div style="height: 300px; width: 100%; background-color: yellow; display: inline-block;"></div>
+    </div>
+</body>
+</html>

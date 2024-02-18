@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+div, textarea  {
+    border: 1px solid yellowgreen;
+    box-sizing: border-box;
+}
+
+.nav li {
+    display: inline-block;
+    width: 60px;
+    background-color: violet;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.back-image {
+    background-image: url(../images/back_img.png);
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.image-title {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+}
+
+.image-content {
+    color: white;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    
+}
+
+.image-button {
+    /*
+        position : relative 
+            원래 내 위치를 기준으로 이동
+
+        position : absolute
+            relative 부모를 기준으로 이동
+    */
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+
+.target {
+    background-color: grey;
+    position: relative;
+    left: 40%;
+    top: -20px;
+}
+
+.input-class {
+    width: 200px;
+}
+
+.input-class input{
+    box-sizing: border-box;
+}
+
+.input-class input[type=text], 
+.input-class input[type=number] {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid purple;
+    border-radius: 15px;
+}
+
+.component-table {
+
+}
+
+.my-table {
+    border-collapse: collapse;
+}
+
+.my-table tr td{
+    border: 1px solid black;
+    width: 200px;
+}
